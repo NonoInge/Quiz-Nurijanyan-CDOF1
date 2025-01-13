@@ -1,10 +1,11 @@
 # Quiz-Nurijanyan-CDOF1
-A quiz game where the player answers a number of questions to try and win the game. The game keeps track of the user’s score and provides feedback on correct and incorrect answers.
+A quiz game where the player answers a number of questions to try and win the game. The game keeps track of the user’s score and provides feedback on correct and incorrect answers. The questions are random and can cover any subject, geography, litterature, ...
 
 ## How to Run the Project
 
 1. Prerequisites:
    Install Python (version 3.6 or higher).
+   Have the module Random installed on your machine.
    
 3. Steps:
    Clone or download the project files.
