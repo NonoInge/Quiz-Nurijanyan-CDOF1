@@ -91,8 +91,10 @@ def MCQ(n_questions:int):
         print(f"Question {i}: {q['question']}")
         for choice in q['choices']:
             print(choice)
-    
-        user_answer = int(input("Enter answer number: "))
+
+        user_answer = 0
+        while user_answer not in [1, 2, 3, 4]:#ensures answer is valid
+            user_answer = int(input("Enter answer number: "))
         if user_answer == q['correct']:
             print("Correct!")
             score += 1
