@@ -1,7 +1,7 @@
 # Quiz-Nurijanyan-CDOF1
 A quiz game where the player answers a number of questions to try and win the game. The game keeps track of the user’s score and provides feedback on correct and incorrect answers.
 
-##How to Run the Project
+## How to Run the Project
 
 1. Prerequisites:
    Install Python (version 3.6 or higher).
@@ -15,7 +15,7 @@ A quiz game where the player answers a number of questions to try and win the ga
 3. Gameplay:
    Follow the on-screen instructions to answer the questions by entering the number corresponding to your choice.
 
-##How to Contribute
+## How to Contribute
 
 We welcome contributions to improve the Quiz Game! Here's how you can help:
 
