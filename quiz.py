@@ -72,7 +72,9 @@ def add_question(questions):
     for i in range(4):
         choice = input("Choice number "+str(i+1))
         choices.append(str(i+1)+". "+choice)
-    correct = int(input("Give the number for the correct answer."))
+    correct = 0
+    while correct not in [1, 2, 3, 4]:
+        correct = int(input("Give the number for the correct answer."))#To ensure the correct is one of the possibility
     questions.append({"question": question,
                         "type": type,
                         "choices": choices,
