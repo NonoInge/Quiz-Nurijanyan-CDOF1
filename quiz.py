@@ -72,9 +72,10 @@ def add_question(questions):
     for i in range(4):
         choice = input("Choice number "+str(i+1))
         choices.append(str(i+1)+". "+choice)
-    correct = 0
-    while correct not in [1, 2, 3, 4]:
-        correct = int(input("Give the number for the correct answer."))#To ensure the correct is one of the possibility
+    correct = '0'
+    while not correct.isdigit() or int(correct) not in [1, 2, 3, 4]:
+        correct = input("Give the number for the correct answer.")#To ensure the correct is one of the possibility
+    correct = int(correct)
     questions.append({"question": question,
                         "type": type,
                         "choices": choices,
@@ -93,10 +94,11 @@ def MCQ(n_questions:int):
         print(f"Question {i}: {q['question']}")
         for choice in q['choices']:
             print(choice)
-
+        
         user_answer = 0
-        while user_answer not in [1, 2, 3, 4]:#ensures answer is valid
-            user_answer = int(input("Enter answer number: "))
+        while not user_answer.isdigit() or int(user_answer) not in [1, 2, 3, 4]:#ensures answer is valid
+            user_answer = input("Enter answer number: ")
+        user_answer = int(user_answer)
         if user_answer == q['correct']:
             print("Correct!")
             score += 1
